@@ -1,1 +1,112 @@
+body{
+    background-color: #e6f2ff;
+}
+#noticias{
+    margin-top: 20px;
+}
+#animais_doacao{
+    margin-top: 20px;
+   margin-bottom: 10px;
+}
+#animais_doacao .conteudo{
+    margin-top: 20px;
+    display: flex;
+}
+.bloco_noticias{
+    padding-top: 10px;
+}
+.bloco_noticias ul{
+    list-style-type: none;
+}
+.bloco_noticias ul li{
+   margin-top: 10px;
+}
+.bloco_noticias a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.titulo_sec{
+    display: flex;
+}
+footer {
+    display: block;
+    color: rgb(255, 255, 255);
+    position: relative;
+    background-color: dodgerblue;
+    overflow: hidden;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+.footer_conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 950px;
+    margin: 0px auto;  
+    padding: 20px;  
+}
 
+#informacoes{
+    margin-top: 20px;
+}
+#voluntario{
+    margin-top: 20px;
+}
+#informacoes .informacoes_conteudo{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#doar_material {
+    margin-top: 20px;
+}
+#informacoes .informacoes_conteudo .texto p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 720px) {
+    #informacoes .informacoes_conteudo {
+      display: block;
+    }
+    #informacoes .informacoes_conteudo img{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#informacoes .formulario{
+    margin-bottom: 20px;
+}
+#informacoes .informacoes_conteudo2{
+    display: block;
+}
+#informacoes .informacoes_conteudo2 p{
+    text-align: justify;
+}
+
+#informacoes .informacoes_conteudo2 .texto_imagem{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#informacoes .informacoes_conteudo2 .texto_imagem img{
+    margin-left: 50px;
+    height: 200px;
+}
+@media only screen and (max-width: 720px) {
+    #informacoes .informacoes_conteudo2 .texto_imagem{
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #informacoes .informacoes_conteudo2 .texto_imagem img{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+}
