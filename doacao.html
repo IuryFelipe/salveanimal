@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link rel="icon" href="images/favicon.png">
+        <script src ="js/doacao.js"></script>
+        <title>Salve Animal Palmas | Adoção</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo Salve Animal"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adocao.html">Adoção</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Doação <span class="sr-only">(Página atual)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="doacao.html#doar_dinheiro">Doação financeira</a>
+                            <a class="dropdown-item" href="doacao.html#doar_material">Doação de produtos</a>
+                            <a class="dropdown-item" href="doacao.html#voluntario">Trabalho voluntário</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+        </header>
+        <section id="informacoes">
+            <div class="container">
+                <div class="informacoes_conteudo">
+                    <div class="texto">
+                        <h3>Doação</h3>
+                        <p>Existem diversas formas para ajudar a ONG Salve Animal a continuar seu trabalho de resgate e cuidados aos animais. Você pode se tornar
+                            um <strong>voluntário</strong> e colaborar com nossas diversas ações, <strong>doar qualquer quantia em dinheiro</strong> ou até mesmo nos <strong>ajudar com mantimentos</strong> como rações, produtos de limpezas e utensílios para cuidado dos animais resgatados.
+                            Cada módulo está detalhado abaixo.
+                        </p>
+                    </div>
+                    <img src="images/voluntario.png" alt="Cachorro com plata de adoção"/>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="vol" id="voluntario">
+            <div class="container">
+                <div class="texto">
+                    <h3>Seja voluntário</h3>
+                    <p>Os trabalhos para voluntário variam bastante. Precisamos de ajuda manual para resgatar animais, dar banho, tosa e limpeza do ambiente em que eles se encontram na ONG.
+                        Para ser voluntário em algum destes serviços, selecione o de seu interesse e preencha seus dados pessoais abaixo.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="informacoes">
+            <div class="container">
+               <div class="formulario">
+                <form>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Digite seu nome completo</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Fulano da Silva" required="true">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Digite seu melhor email</label>
+                      <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Como pode nos ajudar?</label>
+                            <select class="form-control" id="select_tipo_trabalho">
+                          <option>Selecione...</option>      
+                          <option>Ajudar com resgate de animais</option>
+                          <option>Ajudar com limpeza do ambiente onde os animais ficam</option>
+                          <option>Ajudar com banho aos animais</option>
+                          <option>Ajudar com tosa</option>
+                        </select>
+                      </div>
+                    <button type="submit" onClick="a()" id="bth-enviar_sol" class="btn btn-primary">Enviar solicitação de voluntariado</button>
+                    
+                </form>
+               </div>
+            </div>
+        </section>
+
+        <section class="doar" id="doar_dinheiro">
+            <div class="container">
+                <div class="texto">
+                    <h3>Doação financeira</h3>
+                    <p>Para realizar doação financeira você pode vir até a ONG Salve Animal no endereço Quadra XXX - Lote XX Palmas-TO 
+                        com o valor a ser doado, pode realizar transferencia para conta BB Agencia: 0000-0 Conta: 0000 ou gera um boleto abaixo com o valor desejado.
+                    </p>
+                </div>
+                <div class="form-check form-check-inline" id="valordoacao">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cinco" value="cinco">
+                    <label class="form-check-label" for="inlineRadio1">R$ 5,00</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dez" value="dez">
+                        <label class="form-check-label" for="inlineRadio2">R$ 10,00</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="vinte" value="vinte">
+                        <label class="form-check-label" for="inlineRadio2">R$ 20,00</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cinquenta" value="cinquenta">
+                        <label class="form-check-label" for="inlineRadio2">R$ 50,00</label>
+                    </div>
+                    <button type="submit" onClick="doar()" id="bth-doar" class="btn btn-success">Doar</button>
+                 </div>
+        </section>
+
+        <section class="doar" id="doar_material">
+            <div class="container">
+                <div class="texto">
+                    <h3>Doar material</h3>
+                    <p>Para realizar doação de material para a ONG Salve Animal é necessário que entre em contato para combinar com nossa equipe data e horário para busca do(s) item(ns)
+                        ou se preferir, pode nos fazer uma visita no endereço Quadra XXX - Lote XX Palmas-TO com o item a ser doado. Abaixo está uma lista do que precisamos atualmente.
+                    </p>
+                </div>
+                <ul>
+                    <li>Rações para gatos e cachorros adultos e filhotes;</li>
+                    <li>Desinfetante;</li>
+                    <li>Shampoo para banho dos gatos e cachorros;</li>
+                </ul>
+            </div>
+        </section>
+        
+        <footer>
+            <section class="footer_conteudo">
+                <p>&copy; <strong>Salve Animal Palmas 2020</strong> | Este é um site sobre uma ONG fictícia, todas as imagens foram retiradas da internet.</p>
+            </section>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    </body>
+</html>
