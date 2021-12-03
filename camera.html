@@ -8,7 +8,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
         <link rel="icon" href="images/favicon.png">
-        <script src ="js/doacao.js"></script>
+        <script src ="js/camera.js"></script>
         <title>Salve Animal Palmas | Câmera</title>
     </head>
     <body>
@@ -38,15 +38,18 @@
         </header>
         <div class="container-camera">
             <div class="camera-content">
-                <form>
-                    <label for="arquivo">Abrir câmera</label>
+                    <label for="imagem-input" class="botao">Abrir câmera</label>
                     <input 
                         type="file" 
-                        name="arquivo" 
-                        id="arquivo"
-                        accept="image/*;capture=camera">
-                </form>
-            </div>
+                        id="imagem-input" 
+                        name="imagem"
+                        onchange="previewFile()" 
+                        accept=".jpg, .jpeg, .png; capture=camera"
+                    >
+            </div>    
+        </div>
+        <div class="container-foto">
+            <img class="foto" width="100px" height="10px" src="" alt="Image preview...">
         </div>
         
         <footer>
