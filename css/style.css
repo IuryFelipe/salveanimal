@@ -41,7 +41,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     max-width: 950px;
     margin: 0px auto;  
     padding: 20px;  
@@ -109,4 +109,23 @@ footer {
         display: flex;
         align-items: center;
     }
+}
+.container-camera{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.camera-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.botao-camera{
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    margin-top: 50%;
 }
